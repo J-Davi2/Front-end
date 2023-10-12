@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: georgia;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #444;
+    transition: .5s;
+}
+
+a:hover{
+    color: #37a1f7;
+}
+
+/* Navbar */
+
+.navbar{
+    padding: 1.5rem 2.5rem;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.links-nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.container{
+    display: flex;
+    gap: 3rem;
+    padding: 2rem 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.posts-container{
+    flex: 3 1 0;
+}
+
+.post img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title,
+.description{
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+/* side-bar */
+
+.side-bar{
+    flex: 1 1 0;
+}
+
+.busca,
+.categorias,
+.tags{
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
+.busca h4,
+.categorias h4,
+.tags h4{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.busca form{
+    display: flex;
+}
+
+.busca input{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+}
+
+.busca input[type="submit"]{
+    font-size: 15px;
+    background-color: #37a1f7;
+    color: #ddd;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.categorias li{
+    margin-bottom: 1rem;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tags a {
+    background-color: #ddd;
+    padding: .5rem 0.7rem;
+    border: 0.3rem;
+    border: 0.3rem;
+    display: inline-block; 
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+
+footer{
+    border-top: 2px solid #ddd;
+    padding: 3rem;
+    text-align: center;
+}
+
+footer h2,
+footer p{
+    margin-bottom: 0.5rem;
+}
+
+/* Responsividade */
+
+@media (max-width: 450px) {
+
+    
+    .container{
+        flex-wrap: wrap;
+    }
+}

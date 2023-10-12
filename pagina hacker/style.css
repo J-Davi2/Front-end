@@ -1,0 +1,359 @@
+/* geral */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #222;
+}
+
+h1, h2, h3 {
+    color: #d3cccc;
+}
+
+p {
+    color: #d7d9dd;
+}
+
+.detalhes{
+    color: #b15559;
+}
+
+/* navbar */
+
+.navbar-container {
+    width: 100%;
+    height: 70px;
+    background-color: #292929a6;
+    padding: 0 2rem;
+    position: fixed;
+}
+
+nav{
+    position: relative;
+}
+
+nav img {
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px; 
+}
+
+.navbar-items {
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+
+}
+
+.navbar-items li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a{
+    color: #666262;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-items a:hover{
+    color: #ffffff;
+}
+
+/* conteudo principal */
+.main-banner {
+    background-image: url(imgs/img-bunner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 3px 3px 8px #000;
+}
+
+
+/* section tecnologias */
+.container-tecnologias{
+    padding-top: 15px;
+}
+
+.tecs-geral {
+    padding: 3rem 0;
+    letter-spacing: 1.5px;
+}
+
+
+.tecs-geral ul {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tecs-geral li {
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.tecs-geral li i {
+    font-size: 40px;
+}
+
+.bi-filetype-js {
+    color: #d2df22;
+}
+
+.bi-filetype-py {
+    color: #334dc0;
+}
+
+.bi-gear-fill{
+    color: #552626;
+}
+
+.tecs-geral li h2{
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.tecs-geral li p {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* sobre */
+
+.sobre-section{
+    padding-top: 15px;
+}
+
+.sobre-section h2{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 50px;
+}
+
+.sobre-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.sobre-container img{
+    margin: 0 auto;
+    padding-right: 50px;
+
+}
+
+.sobre-container h3{
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+.sobre-section p{
+    width: 500px;
+    text-align: justify;
+    padding: 20px 5%;
+    font-size: 20px;
+}
+
+/* contato */
+
+.section-contato{
+    padding-top: 15px;
+}
+
+.contain-form {
+    background-color: #999595;
+    padding-top: 30px;
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    margin:  100px auto 0 auto;
+}
+
+.contain-form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #4e4b4b;
+}
+
+.formulario label{
+    display: flex;
+    padding: 10px 10px; 
+
+}
+
+.formulario input,
+.formulario textarea{
+
+    width: 200px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #d3cccc;
+}
+
+.formulario textarea {
+    width: 300px;
+    resize: none;
+
+}
+
+form input[type="submit"] {
+    width: 80px;
+    height: 40px;
+    background-color: #a7a5a5;
+    margin: 20px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+form input[type="submit"]:hover {
+    color: #ffffff;
+    background-color: #c97b7b;
+}
+
+/* roda pé */
+
+footer {
+    border-top: 1px solid #999595;
+    margin-top: 30px;
+    background-color: #111;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer h2{
+    padding-left: 30px;
+}
+
+/* responsividade */
+
+/* small laptops a partir de 1100px*/
+
+@media (max-width: 800px) {
+    .main-banner p{
+        font-size: 30px;
+    }
+
+    .tecs-geral ul li h2{
+        font-size: 20px;
+    }
+
+    .tecs-geral ul li p{
+        font-size: 12px;
+        width: 180px;
+    }
+
+    .sobre-section h2{
+        font-size: 30px;
+    }
+
+    .sobre-container img{
+        width: 90%;
+        height: 90%;
+    }
+    .sobre-container h3{
+        font-size: 30px;
+        margin-left: -130px;
+    }
+    
+    .sobre-container p{
+        font-size: 15px;
+        margin: 0 20px 0 -55px;
+    }
+
+    .section-contato{
+        margin-top: -40px;
+    }
+
+    .contain-form form input[type="submit"] {
+        width: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .navbar-items li {
+        display: none;
+    }
+
+    .main-banner p{
+        font-size: 22px;
+    }
+
+    .tecs-geral ul {
+        display: block;
+    }
+
+    .tecs-geral ul  li {
+        width: 100%;
+    }
+
+    .tecs-geral ul  li p{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .sobre-container{
+        display: block;
+    }
+
+    .sobre-img {
+        width: 480px;
+    }
+
+    .sobre-img img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .sobre-text{
+        width: 400px;
+    }
+
+    .sobre-text h3 {
+        font-size: 20px;
+        margin: 2px 2px 0 0;
+    }
+        
+    .sobre-text p {
+        font-size: 15px;
+        width: 100%;
+        margin-left: 9px;
+    }
+    
+
+
+} 
